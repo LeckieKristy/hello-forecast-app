@@ -29,3 +29,21 @@ li {
   border: 6px double rgba(150, 150, 236, 0.7);
   border-radius: 15px;
 }
+.location-overview {
+  padding-bottom: 20px;
+}
+.temperature-icon-number img {
+  margin-right: 10px;
+  float: left;
+  height: 64px;
+  width: 64px;
+}
+.temperature-icon-number strong {
+  color: #29213f;
+  font-weight: 400px;
+  font-size: 50px;
+}
+.temperature-icon-number .units {
+  position: relative;
+  top: -25px;
+}
