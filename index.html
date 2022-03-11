@@ -16,70 +16,72 @@
 
     <link rel="stylesheet" href="src/style.css" />
   </head>
+
   <body>
     <div class="container">
-      <div class="weather-app-wrapper">
-        <div class="weather-app">
-          <form id="search-form" class="mb-4">
-            <div class="row">
-              <div class="col-6">
-                <input
-                  type="search"
-                  placeholder="Type a city name..."
-                  class="form-control"
-                  id="city-input"
-                />
+      <div class="img">
+        <div class="weather-app-wrapper">
+          <div class="weather-app">
+            <form id="search-form" class="mb-4">
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    type="search"
+                    placeholder="Type a city name..."
+                    class="form-control"
+                    id="city-input"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="search"
+                    class="btn btn-secondary w-100"
+                  />
+                </div>
               </div>
-              <div class="col-3">
-                <input
-                  type="submit"
-                  value="search"
-                  class="btn btn-secondary w-100"
-                />
-              </div>
-            </div>
-          </form>
-          <div class="location-overview">
-            <h1 id="location"></h1>
-            <ul>
-              <li>Last updated: <span id="date"> </span></li>
-              <li id="description"></li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="temperature-icon-number">
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                  alt="cloudy"
-                  id="icon"
-                />
-                <strong id="temperature"></strong>
-                <span class="units">°C | <a href="#">°F</a></span>
-              </div>
-            </div>
-            <div class="col-6">
+            </form>
+            <div class="location-overview">
+              <h1 id="location"></h1>
               <ul>
-                <li><span id="precipitation"></span></li>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> Km/hr</li>
+                <li>Last updated: <span id="date"> </span></li>
+                <li id="description"></li>
               </ul>
             </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="temperature-icon-number">
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                    alt="cloudy"
+                    id="icon"
+                  />
+                  <strong id="temperature"></strong>
+                  <span class="units">°C </span>
+                </div>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li><span id="precipitation"></span></li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span> Km/hr</li>
+                </ul>
+              </div>
+            </div>
           </div>
+          <small>
+            This app is an
+            <a
+              href="https://github.com/LeckieKristy/hello-forecast-app"
+              target="_blank"
+            >
+              Open-Source code
+            </a>
+            by Kristy Leckie
+          </small>
         </div>
-        <small>
-          This app is an
-          <a
-            href="https://github.com/LeckieKristy/hello-forecast-app"
-            target="_blank"
-          >
-            Open-Source code
-          </a>
-          by Kristy Leckie
-        </small>
       </div>
     </div>
-
     <script src="src/app.js"></script>
   </body>
 </html>

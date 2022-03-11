@@ -1,9 +1,16 @@
+.img {
+  background-image: url(../images/purpleweather.jpg);
+  padding: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-  color: #a99bcc;
+  color: #b8a8e2;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -15,7 +22,7 @@ ul {
 }
 li {
   list-style-type: none;
-  color: #71678b;
+  color: #b8a8e2;
   font-size: 16px;
   font-weight: 100px;
   line-height: 19px;
@@ -24,7 +31,7 @@ li:first-letter {
   text-transform: capitalize;
 }
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 500px;
   margin: 30px auto;
 }
 .weather-app {
@@ -42,11 +49,15 @@ li:first-letter {
   width: 64px;
 }
 .temperature-icon-number strong {
-  color: #29213f;
+  color: #b8a8e2;
   font-weight: 400px;
   font-size: 50px;
 }
 .temperature-icon-number .units {
   position: relative;
   top: -25px;
+}
+small {
+  color: #b8a8e2;
+  font-weight: bolder;
 }
