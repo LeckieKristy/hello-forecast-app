@@ -2,11 +2,11 @@
   background-image: url(../images/purpleweather.jpg);
   padding: 200px;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Signika Negative", sans-serif;
 }
 
 h1 {
@@ -31,14 +31,16 @@ li:first-letter {
   text-transform: capitalize;
 }
 .weather-app-wrapper {
-  max-width: 500px;
+  max-width: 600px;
   margin: 30px auto;
 }
+
 .weather-app {
   padding: 20px;
-  border: 6px double rgba(150, 150, 236, 0.7);
-  border-radius: 15px;
+  border: 6px double rgba(177, 177, 255, 0.7);
+  border-radius: 50px;
 }
+
 .location-overview {
   padding-bottom: 20px;
 }
@@ -56,8 +58,25 @@ li:first-letter {
 .temperature-icon-number .units {
   position: relative;
   top: -25px;
+  font-weight: bolder;
 }
 small {
   color: #b8a8e2;
   font-weight: bolder;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #b8a8e2;
+}
+.weather-forecast-day {
+  color: #b8a8e2;
+  font-size: 16px;
+  font-weight: bold;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+.weather-forecast-temperature-max {
+  font-weight: bold;
 }
