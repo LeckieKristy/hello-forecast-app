@@ -1,8 +1,8 @@
 .img {
   background-image: url(../images/purpleweather.jpg);
-  padding: 200px;
+  padding: 50px;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 body {
@@ -32,6 +32,7 @@ li:first-letter {
 }
 .weather-app-wrapper {
   max-width: 600px;
+  min-width: 600px;
   margin: 30px auto;
 }
 
