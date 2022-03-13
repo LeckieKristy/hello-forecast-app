@@ -23,6 +23,27 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = ` <div class="row">`;
+  let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `  <div class="col-2">
+                  <div class="weather-forecast-day">${day}</div>
+                  <div class="weather-forcast-icon">ICON</div>
+                  <div class="weather-forcast-temperature">
+                    <span class="weather-forecast-temperature-max">18</span>
+                    |
+                    <span class="weather-forecast-temperature-min">12</span>
+                  </div>
+              </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
@@ -66,3 +87,5 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 search("Vernon");
+
+displayForecast();
