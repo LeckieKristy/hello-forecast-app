@@ -53,11 +53,11 @@ function displayForecast(response) {
                   <div class="weather-forcast-temperature">
                     <span class="weather-forecast-temperature-max">${Math.round(
                       forecastDay.temp.max
-                    )}</span>
+                    )}°</span>
                     |
                     <span class="weather-forecast-temperature-min">${Math.round(
                       forecastDay.temp.min
-                    )}</span>
+                    )}°</span>
                   </div>
               </div>`;
   });
@@ -102,7 +102,7 @@ function displayTemperature(response) {
 
 function search(city) {
   let apiKey = "a16f20b5b1975498f29ae71008574cdb";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=en`;
   axios.get(apiUrl).then(displayTemperature);
 }
 

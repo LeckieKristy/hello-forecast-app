@@ -9,6 +9,7 @@
 
 body {
   font-family: "Signika Negative", sans-serif;
+  background-color: #b8a8e2;
 }
 
 h1 {
@@ -41,7 +42,6 @@ li:first-letter {
 .weather-app {
   padding: 20px;
   border: 6px double rgba(177, 177, 255, 0.7);
-  border-radius: 50px;
 }
 
 .location-overview {
