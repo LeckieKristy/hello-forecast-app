@@ -1,19 +1,15 @@
-.img {
-  background-image: url(../images/purpleweather.jpg);
-  padding: 50px;
-  background-position: center;
-  background-size: cover;
-  max-width: 900px;
-  min-width: 600px;
-}
-
 body {
   font-family: "Signika Negative", sans-serif;
-  background-color: #b8a8e2;
+  background-image: radial-gradient(
+    circle farthest-corner at 0% -0.5%,
+    rgba(135, 206, 250, 1) 0%,
+    rgba(255, 182, 193, 1) 100.2%
+  );
+  background-repeat: no-repeat;
 }
 
 h1 {
-  color: #b8a8e2;
+  color: #7a2747;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -25,7 +21,7 @@ ul {
 }
 li {
   list-style-type: none;
-  color: #b8a8e2;
+  color: #7a2747;
   font-size: 16px;
   font-weight: 100px;
   line-height: 19px;
@@ -41,7 +37,7 @@ li:first-letter {
 
 .weather-app {
   padding: 20px;
-  border: 6px double rgba(177, 177, 255, 0.7);
+  border: 6px double rgba(95, 17, 3, 0.801);
 }
 
 .location-overview {
@@ -54,7 +50,7 @@ li:first-letter {
   width: 64px;
 }
 .temperature-icon-number strong {
-  color: #b8a8e2;
+  color: #7a2747;
   font-weight: 400px;
   font-size: 50px;
 }
@@ -64,16 +60,17 @@ li:first-letter {
   font-weight: bolder;
 }
 small {
-  color: #b8a8e2;
+  color: #7a2747;
   font-weight: bolder;
+  padding-left: 50px;
 }
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #b8a8e2;
+  color: #7a2747;
 }
 .weather-forecast-day {
-  color: #b8a8e2;
+  color: #7a2747;
   font-size: 16px;
   font-weight: bold;
 }

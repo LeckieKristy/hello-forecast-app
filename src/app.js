@@ -113,7 +113,24 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function getCurrentPosition(position) {
+  let lat = position.coords.latitude;
+  let long = position.coords.longitude;
+
+  let apiKey = "a16f20b5b1975498f29ae71008574cdb";
+  let apiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${apiKey}`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handlePosition(response) {
+  navigator.geolocation.getCurrentPosition(getCurrentPosition);
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("Vernon");
+let locationButton = document.querySelector("#location-button");
+locationButton.addEventListener("click", handlePosition);
+
+search("Winnipeg");
