@@ -5,7 +5,7 @@ body {
     rgba(135, 206, 250, 1) 0%,
     rgba(255, 182, 193, 1) 100.2%
   );
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 }
 
 h1 {
@@ -37,11 +37,13 @@ li:first-letter {
 
 .weather-app {
   padding: 20px;
-  border: 6px double rgba(95, 17, 3, 0.801);
+  border: 1px solid rgba(95, 17, 3, 0.801);
+  border-radius: 10px;
 }
 
 .location-overview {
   padding-bottom: 20px;
+  text-align: center;
 }
 .temperature-icon-number img {
   margin-right: 10px;
@@ -62,7 +64,7 @@ li:first-letter {
 small {
   color: #7a2747;
   font-weight: bolder;
-  padding-left: 50px;
+  padding-left: 150px;
 }
 .weather-forecast {
   margin-top: 20px;
