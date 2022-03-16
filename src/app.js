@@ -36,10 +36,10 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = ` <div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 4)
+    if (index < 5)
       forecastHTML =
         forecastHTML +
-        `  <div class="col-12">
+        ` <div class= handle-forecast-style> <div class="col-12">
                   <span class="weather-forecast-day">${formatDay(
                     forecastDay.dt
                   )}</span> 
@@ -59,8 +59,8 @@ function displayForecast(response) {
                     <span class="weather-forecast-temperature-min">${Math.round(
                       forecastDay.temp.min
                     )}°</span>
-                  </span>
-              </div>`;
+                  </span>     
+              </div></div> `;
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
@@ -82,6 +82,9 @@ function displayTemperature(response) {
 
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+
+  let feelsLikeElement = document.querySelector("#feels-like");
+  feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like);
 
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round(response.data.wind.speed);
