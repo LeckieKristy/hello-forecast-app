@@ -36,7 +36,7 @@ li:first-letter {
 
 .weather-app {
   padding: 20px;
-  border: 1.5px solid rgba(95, 17, 3, 0.801);
+  border: 3.5px solid rgba(95, 17, 3, 0.801);
   border-radius: 10px;
 }
 
@@ -61,7 +61,7 @@ li:first-letter {
 small {
   color: #7a2747;
   font-weight: bolder;
-  padding-left: 150px;
+  padding-left: 300px;
 }
 .weather-forecast {
   margin-top: 20px;
