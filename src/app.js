@@ -77,7 +77,7 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 
   let dateElement = document.querySelector("#date");
@@ -122,7 +122,7 @@ function getCurrentPosition(position) {
   let long = position.coords.longitude;
 
   let apiKey = "a16f20b5b1975498f29ae71008574cdb";
-  let apiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${apiKey}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${apiKey}`;
 
   axios.get(apiUrl).then(displayTemperature);
 }
