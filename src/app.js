@@ -34,12 +34,12 @@ function formatDay(timestamp) {
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = ` <div class="row">`;
+  let forecastHTML = ` <div class="row justify-content-evenly">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 5)
+    if (index < 4)
       forecastHTML =
         forecastHTML +
-        ` <div class= handle-forecast-style> <div class="col-12">
+        ` <div class= handle-forecast-style> <div class="col-lg-12">
                   <span class="weather-forecast-day">${formatDay(
                     forecastDay.dt
                   )}</span> 
@@ -49,7 +49,7 @@ function displayForecast(response) {
                     forecastDay.weather[0].icon
                   }@2x.png"
                   alt="
-                  width="40/>
+                  width="0"/>
 
                   <span class="weather-forcast-temperature">
                     <span class="weather-forecast-temperature-max">${Math.round(
